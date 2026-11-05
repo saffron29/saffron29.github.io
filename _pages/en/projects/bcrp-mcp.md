@@ -4,6 +4,7 @@ permalink: /en/projects/bcrp-mcp/
 author_profile: true
 locale: en-US
 lang: en
+share: true
 traduccion: /portfolio/mcp-bcrp/
 ---
 

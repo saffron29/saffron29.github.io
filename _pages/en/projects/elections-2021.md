@@ -4,6 +4,7 @@ permalink: /en/projects/elections-2021/
 author_profile: true
 locale: en-US
 lang: en
+share: true
 traduccion: /portfolio/elecciones-2021/
 ---
 

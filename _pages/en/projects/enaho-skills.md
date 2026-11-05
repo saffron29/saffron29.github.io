@@ -4,6 +4,7 @@ permalink: /en/projects/enaho-skills/
 author_profile: true
 locale: en-US
 lang: en
+share: true
 traduccion: /portfolio/enaho-skills/
 ---
 

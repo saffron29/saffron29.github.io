@@ -4,6 +4,7 @@ permalink: /en/projects/audio-transcription/
 author_profile: true
 locale: en-US
 lang: en
+share: true
 traduccion: /portfolio/transcribir-audio/
 ---
 
