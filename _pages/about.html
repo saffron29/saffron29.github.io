@@ -1,0 +1,100 @@
+---
+permalink: /
+title: "Inicio"
+layout: splash
+author_profile: false
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+<section class="fp-hero">
+  <div class="fp-hero__photo">
+    <img src="/images/foto.jpg" alt="Foto de Frank Pinares Gutiérrez">
+  </div>
+  <div class="fp-hero__text">
+    <p class="fp-eyebrow">Ciencia política · Procesos electorales · Análisis de datos</p>
+    <h1 class="fp-hero__name">Frank Pinares Gutiérrez</h1>
+    <p class="fp-hero__bio">Licenciado en Ciencia Política y Gobierno por la PUCP. Estudio procesos electorales, contextos institucionales y relaciones internacionales con análisis de datos aplicado a las ciencias sociales.</p>
+    <div class="fp-pills">
+      <span>Procesos electorales</span><span>Partidos políticos</span><span>Política comparada</span><span>Relaciones internacionales</span><span>Gestión pública</span>
+    </div>
+    <div class="fp-btns">
+      <a class="fp-btn fp-btn--primary" href="https://github.com/saffron29"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      <a class="fp-btn" href="https://www.linkedin.com/in/frank-pinares-guti%C3%A9rrez-25322b286/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+      <a class="fp-btn" href="mailto:a20155978@pucp.edu.pe"><i class="fas fa-envelope" aria-hidden="true"></i> Correo</a>
+      <a class="fp-btn" href="/files/cv-frank-pinares.pdf"><i class="fas fa-file-arrow-down" aria-hidden="true"></i> CV</a>
+      <a class="fp-btn" href="#tesis"><i class="fas fa-book" aria-hidden="true"></i> Tesis</a>
+    </div>
+  </div>
+</section>
+
+<section class="fp-section">
+  <p class="fp-kicker">En cifras</p>
+  <div class="fp-stats">
+    <div class="fp-stat"><span class="fp-stat__num">86,488</span><span class="fp-stat__txt">mesas de la ONPE limpiadas y agregadas en 1,874 distritos</span></div>
+    <div class="fp-stat"><span class="fp-stat__num">27.58%</span><span class="fp-stat__txt">de pobreza 2024 calculada desde los microdatos de la ENAHO, igual que la cifra oficial del INEI</span></div>
+    <div class="fp-stat"><span class="fp-stat__num">43</span><span class="fp-stat__txt">eñes rescatadas: la ONPE publicó «ESPAÑA» como «ESPA¿¿A»</span></div>
+    <div class="fp-stat"><span class="fp-stat__num">200 mg</span><span class="fp-stat__txt">de cafeína al día, el combustible de todo lo anterior</span></div>
+  </div>
+</section>
+
+<section class="fp-section" id="proyectos">
+  <p class="fp-kicker">Ciencia de datos</p>
+  <h2 class="fp-h2">Proyectos</h2>
+  <p class="fp-lead">Cada proyecto parte de una pregunta y llega a un resultado verificable con fuentes oficiales, métodos reproducibles y código abierto.</p>
+  {% include tarjetas-proyectos.html %}
+</section>
+
+<section class="fp-section" id="videos">
+  <p class="fp-kicker">Divulgación</p>
+  <h2 class="fp-h2">Videos y demo</h2>
+  <div class="fp-video">
+    <video controls preload="metadata" playsinline poster="/images/reel-portada.png">
+      <source src="https://saffron29.github.io/tarea_3/reel.mp4" type="video/mp4">
+      <a href="https://saffron29.github.io/tarea_3/reel.mp4">Ver el reel</a>
+    </video>
+    <div>
+      <h3 class="fp-card__title">¿Dónde se decidió la elección de 2021?</h3>
+      <p>Reel vertical de 67 segundos que resume los hallazgos del proyecto sobre el voto territorial. El guion sale del informe y cada cifra se verificó contra la ONPE, el JNE y el INEI antes de narrarse.</p>
+      <p class="fp-tools">La narración se generó con IA (Qwen3-TTS) a partir de la voz del autor, y el video lo indica de manera visible. Música: «Inspired», de Kevin MacLeod (incompetech.com), CC BY 4.0.</p>
+      <div class="fp-btns">
+        <a class="fp-btn fp-btn--primary" href="https://saffron29.github.io/tarea_3/">Dashboard en vivo</a>
+        <a class="fp-btn" href="https://saffron29.github.io/tarea_3/reel.mp4">Ver en pantalla completa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fp-section" id="mas-trabajos">
+  <p class="fp-kicker">Archivo</p>
+  <h2 class="fp-h2">Más trabajos</h2>
+  <div class="fp-minis">
+    {% for m in site.data.portafolio.mas_trabajos %}
+    <article class="fp-mini">
+      <span class="fp-tag">{{ m.etiqueta }}</span>
+      <h3 class="fp-mini__title">{{ m.titulo }}</h3>
+      <p>{{ m.texto }}</p>
+      <div class="fp-btns">{% for e in m.enlaces %}<a class="fp-btn" href="{{ e.url }}">{{ e.texto }}</a>{% endfor %}</div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="fp-section" id="tesis">
+  <p class="fp-kicker">Investigación</p>
+  <h2 class="fp-h2">Tesis y trayectoria</h2>
+  {% include tesis.html %}
+  {% include trayectoria.html %}
+  <div class="fp-btns"><a class="fp-btn fp-btn--primary" href="/cv/">Ver CV completo</a><a class="fp-btn" href="/files/cv-frank-pinares.pdf">Descargar CV (PDF)</a></div>
+</section>
+
+<section class="fp-contact" id="contacto">
+  <h2 class="fp-contact__title">Contacto</h2>
+  <p>Me interesa seguir desarrollándome en la investigación, la gestión pública, la consultoría, los organismos internacionales y los proyectos con impacto social.</p>
+  <div class="fp-btns">
+    <a class="fp-btn fp-btn--primary" href="mailto:a20155978@pucp.edu.pe"><i class="fas fa-envelope" aria-hidden="true"></i> a20155978@pucp.edu.pe</a>
+    <a class="fp-btn" href="https://www.linkedin.com/in/frank-pinares-guti%C3%A9rrez-25322b286/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+    <a class="fp-btn" href="https://github.com/saffron29"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+  </div>
+</section>

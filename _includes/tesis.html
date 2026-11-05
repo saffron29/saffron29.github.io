@@ -1,0 +1,11 @@
+{% assign t = site.data.portafolio.tesis %}
+<article class="fp-thesis">
+  <span class="fp-tag">Tesis</span>
+  <h3 class="fp-thesis__title">{{ t.titulo }}</h3>
+  <p class="fp-thesis__meta">{{ t.detalle }}</p>
+  <p class="fp-thesis__abstract">{{ t.resumen }}</p>
+  <div class="fp-btns">
+    <a class="fp-btn fp-btn--primary" href="{{ t.repositorio }}"><i class="fas fa-building-columns" aria-hidden="true"></i> Repositorio PUCP</a>
+    <a class="fp-btn" href="{{ t.pdf }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>
+  </div>
+</article>

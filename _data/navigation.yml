@@ -10,3 +10,9 @@ main:
 
   - title: "Videos"
     url: /videos/
+
+  - title: "Tesis y CV"
+    url: /cv/
+
+  - title: "Contacto"
+    url: /#contacto

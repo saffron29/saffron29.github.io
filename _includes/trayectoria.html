@@ -1,0 +1,26 @@
+<div class="fp-two">
+  <div>
+    <h3 class="fp-subtitle">Experiencia</h3>
+    <ul class="fp-timeline">
+      {% for x in site.data.portafolio.trayectoria %}
+      <li>
+        <span class="fp-timeline__date">{{ x.fecha }}</span>
+        <strong>{{ x.cargo }}</strong> · {{ x.lugar }}
+        <span class="fp-timeline__text">{{ x.texto }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h3 class="fp-subtitle">Formación</h3>
+    <ul class="fp-timeline">
+      {% for x in site.data.portafolio.formacion %}
+      <li>
+        <span class="fp-timeline__date">{{ x.fecha }}</span>
+        <strong>{{ x.titulo }}</strong>
+        <span class="fp-timeline__text">{{ x.lugar }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

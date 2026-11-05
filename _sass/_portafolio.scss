@@ -1,0 +1,329 @@
+/* ==========================================================================
+   Portafolio de Frank Pinares Gutiérrez: portada, tarjetas, tesis y CV.
+   CSS plano (válido como SCSS). Acento azul marino; el modo oscuro se
+   activa con html[data-theme="dark"], igual que el resto del tema.
+   ========================================================================== */
+
+:root {
+  --fp-navy: #13284a;
+  --fp-navy-2: #1f3d6e;
+  --fp-accent: #1f4e8c;
+  --fp-soft: #eaf0f8;
+  --fp-card-bg: #ffffff;
+  --fp-line: #d5deea;
+}
+
+html[data-theme="dark"] {
+  --fp-accent: #a9c6ee;
+  --fp-soft: #3a4558;
+  --fp-card-bg: #505050;
+  --fp-line: #5f6b7d;
+}
+
+/* ---- Portada ------------------------------------------------------------ */
+.fp-hero {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 2em;
+  align-items: center;
+  margin: 1.2em 0 2.2em;
+  padding: 2.2em 2.2em;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0f2240 0%, #1d3a68 100%);
+  color: #eef3fa;
+}
+.fp-hero__photo img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.85);
+}
+.fp-eyebrow {
+  margin: 0 0 0.5em;
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a9c6ee;
+}
+.fp-hero .fp-hero__name {
+  margin: 0 0 0.35em;
+  font-size: 2.2em;
+  line-height: 1.1;
+  color: #ffffff;
+  border: none;
+}
+.fp-hero__bio {
+  margin: 0 0 1em;
+  max-width: 46em;
+  font-size: 0.95em;
+  color: #dbe5f3;
+}
+.fp-pills { margin: 0 0 1.1em; }
+.fp-pills span {
+  display: inline-block;
+  margin: 0 0.4em 0.45em 0;
+  padding: 0.2em 0.85em;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.72em;
+  color: #eaf1fb;
+}
+
+/* ---- Botones -------------------------------------------------------------- */
+.fp-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45em;
+  margin: 0.7em 0;
+}
+.fp-btn,
+.fp-btn:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.4em 0.95em;
+  border: 1px solid var(--fp-accent);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--fp-accent);
+  font-size: 0.78em;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none !important;
+  transition: background 0.15s ease-in-out;
+}
+.fp-btn:hover { background: var(--fp-soft); color: var(--fp-accent); text-decoration: none !important; }
+.fp-btn--primary,
+.fp-btn--primary:visited {
+  background: var(--fp-navy);
+  border-color: var(--fp-navy);
+  color: #ffffff;
+}
+.fp-btn--primary:hover { background: var(--fp-navy-2); color: #ffffff; }
+html[data-theme="dark"] .fp-btn--primary,
+html[data-theme="dark"] .fp-btn--primary:visited { background: #a9c6ee; border-color: #a9c6ee; color: #13284a; }
+.fp-hero .fp-btn,
+.fp-hero .fp-btn:visited,
+.fp-contact .fp-btn,
+.fp-contact .fp-btn:visited { border-color: rgba(255, 255, 255, 0.55); color: #ffffff; }
+.fp-hero .fp-btn:hover,
+.fp-contact .fp-btn:hover { background: rgba(255, 255, 255, 0.12); color: #ffffff; }
+.fp-hero .fp-btn--primary,
+.fp-hero .fp-btn--primary:visited,
+.fp-contact .fp-btn--primary,
+.fp-contact .fp-btn--primary:visited { background: #ffffff; border-color: #ffffff; color: #13284a; }
+.fp-hero .fp-btn--primary:hover,
+.fp-contact .fp-btn--primary:hover { background: #dbe5f3; color: #13284a; }
+
+/* ---- Secciones ------------------------------------------------------------ */
+.fp-section { margin: 2.6em 0; }
+.fp-kicker {
+  margin: 0 0 0.2em;
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fp-accent);
+}
+.fp-h2,
+.page__content .fp-h2 {
+  margin: 0 0 0.4em;
+  padding: 0;
+  border: none;
+  font-size: 1.6em;
+}
+.page__content .fp-h2 { margin-top: 1.4em; }
+.page__content .fp-section .fp-h2 { margin-top: 0; }
+.fp-lead { max-width: 44em; font-size: 0.9em; color: var(--global-text-color); opacity: 0.8; }
+
+/* ---- En cifras ------------------------------------------------------------ */
+.fp-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+.fp-stat {
+  padding: 0.9em 1em;
+  border: 1px solid var(--fp-line);
+  border-top: 4px solid var(--fp-navy);
+  border-radius: 10px;
+  background: var(--fp-card-bg);
+}
+html[data-theme="dark"] .fp-stat { border-top-color: #a9c6ee; }
+.fp-stat__num { display: block; font-size: 1.55em; font-weight: 800; line-height: 1.2; }
+.fp-stat__txt { display: block; font-size: 0.75em; line-height: 1.45; }
+
+/* ---- Tarjetas de proyecto --------------------------------------------------- */
+.fp-cards { display: grid; gap: 1.6em; margin: 1.2em 0; }
+.fp-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border: 1px solid var(--fp-line);
+  border-radius: 12px;
+  background: var(--fp-card-bg);
+  box-shadow: 0 1px 3px rgba(15, 34, 64, 0.08);
+}
+.fp-card:nth-child(even) .fp-card__media { order: 2; }
+.fp-card__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background: var(--fp-soft);
+}
+.fp-card__media img {
+  display: block;
+  max-width: 100%;
+  max-height: 360px;
+  width: auto;
+  border-radius: 6px;
+}
+.fp-card__body { padding: 1.4em 1.5em; }
+.fp-tag {
+  display: inline-block;
+  padding: 0.25em 0.85em;
+  border-radius: 6px;
+  background: var(--fp-soft);
+  color: var(--fp-accent);
+  font-size: 0.62em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.fp-card__title,
+.page__content .fp-card__title { margin: 0.6em 0 0.5em; font-size: 1.12em; line-height: 1.3; border: none; }
+.fp-card__title a,
+.fp-card__title a:visited { color: var(--global-text-color); text-decoration: none; }
+.fp-card__title a:hover { color: var(--fp-accent); text-decoration: underline; }
+.fp-card__q,
+.fp-card__desc { margin: 0 0 0.7em; font-size: 0.82em; line-height: 1.55; }
+.fp-result {
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+  margin: 0.9em 0;
+  padding: 0.85em 1em;
+  border-radius: 10px;
+  background: var(--fp-navy);
+  color: #ffffff;
+}
+.fp-result__num { font-size: 1.55em; font-weight: 800; line-height: 1.05; white-space: nowrap; }
+.fp-result__txt { font-size: 0.74em; line-height: 1.45; color: #dbe5f3; }
+.fp-tools { margin: 0.5em 0 0; font-size: 0.7em; color: var(--global-text-color); opacity: 0.75; }
+
+/* ---- Videos ----------------------------------------------------------------- */
+.fp-video {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2em;
+  align-items: center;
+}
+.fp-video video {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  background: #1b1a17;
+}
+.fp-video p { font-size: 0.88em; }
+
+/* ---- Más trabajos ------------------------------------------------------------- */
+.fp-minis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1em;
+}
+.fp-mini {
+  padding: 1em 1.1em;
+  border: 1px solid var(--fp-line);
+  border-radius: 10px;
+  background: var(--fp-card-bg);
+}
+.fp-mini__title,
+.page__content .fp-mini__title { margin: 0.55em 0 0.35em; font-size: 0.95em; line-height: 1.3; border: none; }
+.fp-mini p { margin: 0 0 0.4em; font-size: 0.78em; line-height: 1.5; }
+
+/* ---- Tesis y trayectoria ------------------------------------------------------- */
+.fp-thesis {
+  margin: 1em 0 1.6em;
+  padding: 1.3em 1.5em;
+  border: 1px solid var(--fp-line);
+  border-left: 5px solid var(--fp-navy);
+  border-radius: 10px;
+  background: var(--fp-card-bg);
+}
+html[data-theme="dark"] .fp-thesis { border-left-color: #a9c6ee; }
+.fp-thesis__title,
+.page__content .fp-thesis__title { margin: 0.55em 0 0.3em; font-size: 1.05em; line-height: 1.35; border: none; }
+.fp-thesis__meta { margin: 0 0 0.6em; font-size: 0.78em; color: var(--global-text-color); opacity: 0.8; }
+.fp-thesis__abstract { margin: 0 0 0.4em; font-size: 0.84em; line-height: 1.55; }
+.fp-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+.fp-subtitle,
+.page__content .fp-subtitle { margin: 0 0 0.6em; font-size: 1em; border: none; }
+.fp-timeline { margin: 0 0 1em; padding: 0; list-style: none; }
+.fp-timeline li {
+  position: relative;
+  margin: 0 0 1em;
+  padding-left: 1.1em;
+  border-left: 2px solid var(--fp-line);
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+.fp-timeline li::before {
+  content: "";
+  position: absolute;
+  top: 0.35em;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--fp-navy);
+}
+html[data-theme="dark"] .fp-timeline li::before { background: #a9c6ee; }
+.fp-timeline__date {
+  display: block;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fp-accent);
+}
+.fp-timeline__text { display: block; color: var(--global-text-color); opacity: 0.8; }
+
+/* ---- Contacto ------------------------------------------------------------------ */
+.fp-contact {
+  margin: 2.6em 0 1em;
+  padding: 1.8em 2em;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0f2240 0%, #1d3a68 100%);
+  color: #dbe5f3;
+}
+.fp-contact .fp-contact__title { margin: 0 0 0.3em; color: #ffffff; border: none; }
+.fp-contact p { max-width: 44em; font-size: 0.9em; }
+
+/* ---- Celular y tablet ------------------------------------------------------------- */
+@media (max-width: 800px) {
+  .fp-hero { grid-template-columns: 1fr; text-align: center; padding: 1.6em 1.2em; gap: 1em; }
+  .fp-hero__photo img { width: 130px; height: 130px; margin: 0 auto; }
+  .fp-hero .fp-hero__name { font-size: 1.7em; }
+  .fp-hero .fp-btns { justify-content: center; }
+  .fp-card { grid-template-columns: 1fr; }
+  .fp-card:nth-child(even) .fp-card__media { order: 0; }
+  .fp-card__media img { max-height: 240px; }
+  .fp-card__body { padding: 1.1em 1.1em; }
+  .fp-result { flex-direction: column; align-items: flex-start; gap: 0.3em; }
+  .fp-video { grid-template-columns: 1fr; }
+  .fp-video video { margin: 0 auto; }
+  .fp-two { grid-template-columns: 1fr; gap: 0.5em; }
+  .fp-contact { padding: 1.4em 1.2em; }
+}
