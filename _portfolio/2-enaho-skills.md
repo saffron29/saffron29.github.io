@@ -1,7 +1,7 @@
 ---
 title: "Tres skills que limpian, grafican y mapean la ENAHO 2024"
 permalink: /portfolio/enaho-skills/
-excerpt: "<em>Proyecto · Claude Code</em><br/>¿Puede un agente limpiar la ENAHO y replicar la pobreza oficial?<br/><img src='/images/enaho-mapa-pobreza-2024.png' alt='Mapa de pobreza monetaria por departamento, 2024'>"
+excerpt: "<em>Proyecto · Claude Code</em><br/>¿Puede un agente limpiar la ENAHO y replicar la pobreza oficial?<br/><img style='display:block; max-width:100%; max-height:260px; width:auto; margin-top:.6em; border-radius:6px;' src='/images/enaho-mapa-pobreza-2024.png' alt='Mapa de pobreza monetaria por departamento, 2024'>"
 collection: portfolio
 ---
 

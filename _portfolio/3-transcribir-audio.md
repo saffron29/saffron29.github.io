@@ -1,7 +1,7 @@
 ---
 title: "Transcribí 90 minutos de clase en menos de 2 con Whisper"
 permalink: /portfolio/transcribir-audio/
-excerpt: "<em>Herramienta · Python en Colab</em><br/>¿Se puede transcribir una grabación larga gratis, rápido y sin que Whisper invente texto en los silencios?<br/><img src='/images/whisper-tiempos.png' alt='91.6 minutos de audio, transcritos en 1.6 minutos'>"
+excerpt: "<em>Herramienta · Python en Colab</em><br/>¿Se puede transcribir una grabación larga gratis, rápido y sin que Whisper invente texto en los silencios?<br/><img style='display:block; max-width:100%; max-height:260px; width:auto; margin-top:.6em; border-radius:6px;' src='/images/whisper-tiempos.png' alt='91.6 minutos de audio, transcritos en 1.6 minutos'>"
 collection: portfolio
 ---
 
