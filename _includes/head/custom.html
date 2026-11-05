@@ -23,3 +23,14 @@
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
 <!-- end custom head snippets -->
+
+<!-- Versiones del sitio en español e inglés (hreflang) -->
+{% if page.traduccion %}
+  {% if page.lang == "en" %}
+<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}">
+<link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.traduccion }}">
+  {% else %}
+<link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.url }}">
+<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.traduccion }}">
+  {% endif %}
+{% endif %}

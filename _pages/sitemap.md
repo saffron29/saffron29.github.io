@@ -1,4 +1,5 @@
 ---
+traduccion: /en/sitemap/
 layout: single
 title: "Mapa del sitio"
 permalink: /sitemap/

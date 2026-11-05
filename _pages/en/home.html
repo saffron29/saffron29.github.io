@@ -1,0 +1,100 @@
+---
+permalink: /en/
+title: "Home"
+layout: splash
+author_profile: false
+locale: en-US
+lang: en
+traduccion: /
+---
+
+<section class="fp-hero">
+  <div class="fp-hero__photo">
+    <img src="/images/foto.jpg" alt="Photo of Frank Pinares Gutiérrez">
+  </div>
+  <div class="fp-hero__text">
+    <p class="fp-eyebrow">Political science · Electoral processes · Data analysis</p>
+    <h1 class="fp-hero__name">Frank Pinares Gutiérrez</h1>
+    <p class="fp-hero__bio">Political scientist with a degree in Political Science and Government from the Pontifical Catholic University of Peru (PUCP). I study electoral processes, institutional contexts and international relations through data analysis applied to the social sciences.</p>
+    <div class="fp-pills">
+      <span>Electoral processes</span><span>Political parties</span><span>Comparative politics</span><span>International relations</span><span>Public management</span>
+    </div>
+    <div class="fp-btns">
+      <a class="fp-btn fp-btn--primary" href="https://github.com/saffron29"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      <a class="fp-btn" href="https://www.linkedin.com/in/frank-pinares-guti%C3%A9rrez-25322b286/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+      <a class="fp-btn" href="mailto:a20155978@pucp.edu.pe"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+      <a class="fp-btn" href="/files/cv-frank-pinares.pdf"><i class="fas fa-file-arrow-down" aria-hidden="true"></i> CV (in Spanish)</a>
+      <a class="fp-btn" href="#thesis"><i class="fas fa-book" aria-hidden="true"></i> Thesis</a>
+    </div>
+  </div>
+</section>
+
+<section class="fp-section">
+  <p class="fp-kicker">In numbers</p>
+  <div class="fp-stats">
+    <div class="fp-stat"><span class="fp-stat__num">86,488</span><span class="fp-stat__txt">ONPE polling-station results cleaned and aggregated into 1,874 districts</span></div>
+    <div class="fp-stat"><span class="fp-stat__num">27.58%</span><span class="fp-stat__txt">poverty in 2024 computed from ENAHO microdata, matching INEI's official figure</span></div>
+    <div class="fp-stat"><span class="fp-stat__num">43</span><span class="fp-stat__txt">ñ's rescued: ONPE published «ESPAÑA» as «ESPA¿¿A»</span></div>
+    <div class="fp-stat"><span class="fp-stat__num">200 mg</span><span class="fp-stat__txt">of caffeine a day, the fuel behind all of the above</span></div>
+  </div>
+</section>
+
+<section class="fp-section" id="projects">
+  <p class="fp-kicker">Data science</p>
+  <h2 class="fp-h2">Projects</h2>
+  <p class="fp-lead">Each project starts from a question and reaches a verifiable result with official sources, reproducible methods and open code. Code, reports and charts are in Spanish.</p>
+  {% include tarjetas-proyectos.html %}
+</section>
+
+<section class="fp-section" id="videos">
+  <p class="fp-kicker">Outreach</p>
+  <h2 class="fp-h2">Videos and demo</h2>
+  <div class="fp-video">
+    <video controls preload="metadata" playsinline poster="/images/reel-portada.png">
+      <source src="https://saffron29.github.io/tarea_3/reel.mp4" type="video/mp4">
+      <a href="https://saffron29.github.io/tarea_3/reel.mp4">Watch the reel</a>
+    </video>
+    <div>
+      <h3 class="fp-card__title">Where was Peru's 2021 election decided?</h3>
+      <p>A 67-second vertical reel, narrated in Spanish, that summarizes the findings of the project on the territorial vote. The script is based on the report, and every figure was checked against ONPE, the JNE and INEI before being narrated.</p>
+      <p class="fp-tools">The narration was generated with AI (Qwen3-TTS) from the author's voice, and the video says so visibly. Music: «Inspired» by Kevin MacLeod (incompetech.com), CC BY 4.0.</p>
+      <div class="fp-btns">
+        <a class="fp-btn fp-btn--primary" href="https://saffron29.github.io/tarea_3/">Live dashboard</a>
+        <a class="fp-btn" href="https://saffron29.github.io/tarea_3/reel.mp4">Watch full screen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fp-section" id="more-work">
+  <p class="fp-kicker">Archive</p>
+  <h2 class="fp-h2">More work</h2>
+  <div class="fp-minis">
+    {% for m in site.data.portafolio_en.mas_trabajos %}
+    <article class="fp-mini">
+      <span class="fp-tag">{{ m.etiqueta }}</span>
+      <h3 class="fp-mini__title">{{ m.titulo }}</h3>
+      <p>{{ m.texto }}</p>
+      <div class="fp-btns">{% for e in m.enlaces %}<a class="fp-btn" href="{{ e.url }}">{{ e.texto }}</a>{% endfor %}</div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="fp-section" id="thesis">
+  <p class="fp-kicker">Research</p>
+  <h2 class="fp-h2">Thesis and experience</h2>
+  {% include tesis.html %}
+  {% include trayectoria.html %}
+  <div class="fp-btns"><a class="fp-btn fp-btn--primary" href="/en/cv/">Full CV</a><a class="fp-btn" href="/files/cv-frank-pinares.pdf">Download CV (PDF, in Spanish)</a></div>
+</section>
+
+<section class="fp-contact" id="contact">
+  <h2 class="fp-contact__title">Contact</h2>
+  <p>I am interested in continuing to grow in research, public management, consulting, international organizations and projects with social impact.</p>
+  <div class="fp-btns">
+    <a class="fp-btn fp-btn--primary" href="mailto:a20155978@pucp.edu.pe"><i class="fas fa-envelope" aria-hidden="true"></i> a20155978@pucp.edu.pe</a>
+    <a class="fp-btn" href="https://www.linkedin.com/in/frank-pinares-guti%C3%A9rrez-25322b286/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+    <a class="fp-btn" href="https://github.com/saffron29"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+  </div>
+</section>

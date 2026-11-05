@@ -1,5 +1,6 @@
+{% if page.lang == "en" %}{% assign d = site.data.portafolio_en %}{% else %}{% assign d = site.data.portafolio %}{% endif %}
 <div class="fp-cards">
-{% for p in site.data.portafolio.principales %}
+{% for p in d.principales %}
   <article class="fp-card">
     <div class="fp-card__media">
       <a href="{{ p.enlace }}"><img src="{{ p.imagen }}" alt="{{ p.alt }}" loading="lazy"></a>
@@ -7,7 +8,7 @@
     <div class="fp-card__body">
       <span class="fp-tag">{{ p.etiqueta }}</span>
       <h3 class="fp-card__title"><a href="{{ p.enlace }}">{{ p.titulo }}</a></h3>
-      <p class="fp-card__q"><strong>Pregunta:</strong> {{ p.pregunta }}</p>
+      <p class="fp-card__q"><strong>{{ d.etiquetas.pregunta }}:</strong> {{ p.pregunta }}</p>
       <p class="fp-card__desc">{{ p.descripcion }}</p>
       <div class="fp-result">
         <span class="fp-result__num">{{ p.cifra }}</span>

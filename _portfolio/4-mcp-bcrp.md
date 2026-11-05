@@ -1,4 +1,5 @@
 ---
+traduccion: /en/projects/bcrp-mcp/
 title: "Construí un servidor MCP con las series oficiales del BCRP"
 permalink: /portfolio/mcp-bcrp/
 excerpt: "<em>Proyecto · MCP y Claude Code</em><br/>¿Acierta más un modelo de IA las cifras económicas con datos oficiales que con su memoria?<br/><img style='display:block; max-width:100%; max-height:260px; width:auto; margin-top:.6em; border-radius:6px;' src='/images/mcp-bcrp-aciertos.png' alt='Aciertos del modelo con y sin el MCP del BCRP'>"

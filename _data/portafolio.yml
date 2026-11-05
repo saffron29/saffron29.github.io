@@ -140,3 +140,13 @@ formacion:
   - fecha: "En curso"
     titulo: "Diplomatura de Especialización en Ciencia de Datos para las Ciencias Sociales y Gestión Pública"
     lugar: "Q-LAB, Facultad de Ciencias Sociales, PUCP"
+
+etiquetas:
+  pregunta: "Pregunta"
+  tesis: "Tesis"
+  repositorio: "Repositorio PUCP"
+  pdf: "PDF"
+  experiencia: "Experiencia"
+  formacion: "Formación"
+  bio_corta: "Politólogo (PUCP) · Análisis de datos aplicado a las ciencias sociales"
+  ubicacion: "Lima, Perú"

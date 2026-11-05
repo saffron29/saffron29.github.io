@@ -16,3 +16,16 @@ main:
 
   - title: "Contacto"
     url: /#contacto
+
+en:
+  - title: "Projects"
+    url: /en/projects/
+
+  - title: "Videos"
+    url: /en/videos/
+
+  - title: "Thesis & CV"
+    url: /en/cv/
+
+  - title: "Contact"
+    url: /en/#contact

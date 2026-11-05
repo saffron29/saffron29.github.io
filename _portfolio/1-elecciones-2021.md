@@ -1,4 +1,5 @@
 ---
+traduccion: /en/projects/elections-2021/
 title: "Mapeé dónde se decidió la elección presidencial de 2021"
 permalink: /portfolio/elecciones-2021/
 excerpt: "<em>Proyecto · Python, Plotly y voz con IA</em><br/>¿Cómo se distribuyó territorialmente el voto de 2021 y qué cambió entre la primera y la segunda vuelta?<br/><img style='display:block; max-width:100%; max-height:260px; width:auto; margin-top:.6em; border-radius:6px;' src='/images/elecciones-2021-dashboard.png' alt='Vista nacional del dashboard del voto territorial 2021'>"

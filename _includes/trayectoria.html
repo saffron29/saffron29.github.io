@@ -1,8 +1,9 @@
+{% if page.lang == "en" %}{% assign d = site.data.portafolio_en %}{% else %}{% assign d = site.data.portafolio %}{% endif %}
 <div class="fp-two">
   <div>
-    <h3 class="fp-subtitle">Experiencia</h3>
+    <h3 class="fp-subtitle">{{ d.etiquetas.experiencia }}</h3>
     <ul class="fp-timeline">
-      {% for x in site.data.portafolio.trayectoria %}
+      {% for x in d.trayectoria %}
       <li>
         <span class="fp-timeline__date">{{ x.fecha }}</span>
         <strong>{{ x.cargo }}</strong> · {{ x.lugar }}
@@ -12,9 +13,9 @@
     </ul>
   </div>
   <div>
-    <h3 class="fp-subtitle">Formación</h3>
+    <h3 class="fp-subtitle">{{ d.etiquetas.formacion }}</h3>
     <ul class="fp-timeline">
-      {% for x in site.data.portafolio.formacion %}
+      {% for x in d.formacion %}
       <li>
         <span class="fp-timeline__date">{{ x.fecha }}</span>
         <strong>{{ x.titulo }}</strong>

@@ -1,4 +1,5 @@
 ---
+traduccion: /en/videos/
 permalink: /videos/
 title: "Videos"
 author_profile: true
