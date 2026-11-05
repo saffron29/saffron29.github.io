@@ -28,7 +28,7 @@ author:
   pronouns         : # example: "she/her"
   bio              : "Politólogo (PUCP) · Análisis de datos aplicado a las ciencias sociales"
   location         : "Lima, Perú"
-  employer         : "Diplomatura Q-LAB PUCP"
+  employer         : # Institución u organización (vacío = no se muestra)
   uri              : # URL
   email            : "a20155978@pucp.edu.pe"
 
