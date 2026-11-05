@@ -4,6 +4,21 @@
    activa con html[data-theme="dark"], igual que el resto del tema.
    ========================================================================== */
 
+/* ---- Tipografía: Inter (texto) y Montserrat (títulos), alojadas en el repo
+   (assets/fonts, subconjunto latino, licencia SIL OFL 1.1) ----------------- */
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("/assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 400; font-display: swap; src: url("/assets/fonts/inter-latin-400-italic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 600; font-display: swap; src: url("/assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 700; font-display: swap; src: url("/assets/fonts/inter-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 600; font-display: swap; src: url("/assets/fonts/montserrat-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700; font-display: swap; src: url("/assets/fonts/montserrat-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 800; font-display: swap; src: url("/assets/fonts/montserrat-latin-800-normal.woff2") format("woff2"); }
+
+.fp-hero__name, .fp-h2, .fp-card__title, .fp-mini__title, .fp-thesis__title, .fp-subtitle,
+.fp-stat__num, .fp-result__num, .fp-contact__title, .masthead__menu-item--lg a, .author__name {
+  font-family: "Montserrat", "Inter", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
 :root {
   --fp-navy: #13284a;
   --fp-navy-2: #1f3d6e;
